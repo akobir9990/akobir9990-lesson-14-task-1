@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 100%;
+  height: 100vh;
+  background: #021923;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@-webkit-keyframes imageAnimation {
+  0% {
+    margin-top: -200px;
+  }
+  50% {
+    margin-top: 100px;
+    width: 400px;
+    height: 400px;
+  }
+  100% {
+    margin-top: 0;
+    width: 300px;
+    height: 300px;
+  }
+}
+@keyframes imageAnimation {
+  0% {
+    margin-top: -200px;
+  }
+  50% {
+    margin-top: 100px;
+    width: 400px;
+    height: 400px;
+  }
+  100% {
+    margin-top: 0;
+    width: 300px;
+    height: 300px;
+  }
+}
+@-webkit-keyframes text {
+  0% {
+    margin-top: -200px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+@keyframes text {
+  0% {
+    margin-top: -200px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+.animation {
+  width: 1000px;
+  gap: 15px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 70px;
+  overflow: hidden;
+}
+img {
+  width: 300px;
+  height: 300px;
+  margin-top: -500px;
+  -webkit-animation: 3s forwards imageAnimation;
+  animation: 3s forwards imageAnimation;
+}
+span {
+  margin-top: -300px;
+  -webkit-animation: 0.2s forwards text;
+  animation: 0.2s forwards text;
+}
+span:first-child,
+span:nth-child(11) {
+  -webkit-animation-delay: 2.1s;
+  animation-delay: 2.1s;
+}
+span:nth-child(10),
+span:nth-child(2) {
+  -webkit-animation-delay: 2.2s;
+  animation-delay: 2.2s;
+}
+span:nth-child(3),
+span:nth-child(9) {
+  -webkit-animation-delay: 2.3s;
+  animation-delay: 2.3s;
+}
+span:nth-child(4),
+span:nth-child(8) {
+  -webkit-animation-delay: 2.4s;
+  animation-delay: 2.4s;
+}
+span:nth-child(5),
+span:nth-child(7) {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
